@@ -1,0 +1,138 @@
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mazima Financial Services Uganda Limited</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background:white; /* Add your image file path here */
+        background-size: cover; /* Ensure the image covers the entire screen */
+        background-position: center center; /* Center the background image */
+        background-attachment: fixed; /* Keep the image fixed when scrolling */
+        margin: 0;
+        padding: 0;
+    }
+    .top-banner {
+        width: 100%; /* Make the image full width */
+        height: 300px; /* Adjust the height of the banner image */
+        background-image: url(/business.jpg); /* Your image file for the banner */
+        background-size: cover;
+        background-position: center;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Make the container background slightly transparent */
+    }
+
+    h1, h3 {
+        color: #333;
+    }
+    form {
+        text-align: left;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+<!-- Top Banner Image Section -->
+<div class="top-banner"></div>
+
+<div class="container">
+    <h1>Mazima Financial Services Uganda Limited</h1>
+    <h3>Location: EM Plaza, Kampala Road</h3>
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="15245100-9528-4bcd-b965-85e1910016c3">
+        <label for="name">Applicant's Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nin">National ID Number (NIN):</label>
+        <input type="text" id="nin" name="nin" required>
+        
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" required>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="Uganda" required>
+        
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+        
+        <label for="marital_status">Marital Status:</label>
+        <select id="marital_status" name="marital_status" required>
+            <option value="">Select</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select>
+        
+        <label for="amount">
+            Sterling Capital
+            <br>
+            Amount of Money Requested:</label>
+        <input type="number" id="amount" name="amount" required>
+        
+        <label for="payment_period">Payment Period:</label>
+        <select id="payment_period" name="payment_period" required>
+            <option value="">Select</option>
+            <option value="monthly">Monthly</option>
+            <option value="annually">Annually</option>
+        </select>
+        
+        <label for="payment_method">Payment Method:</label>
+        <select id="payment_method" name="payment_method" required>
+            <option value="">Select</option>
+            <option value="bank_transfer">Bank Transfer</option>
+            <option value="mobile_money">Mobile Money</option>
+            <option value="cheque">Cheque</option>
+        </select>
+        
+        <label for="bank_account">Applicant's Bank Account/ Mobile_Money Number:</label>
+        <input type="text" id="bank_account" name="bank_account" required>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
+
